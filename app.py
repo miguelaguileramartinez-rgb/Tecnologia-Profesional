@@ -30,8 +30,15 @@ if st.button("Calcular Precio Final"):
     with col2:
         # Usamos condicionales (if/elif/else) para el diagnóstico
         if descuento > 50:
-            st.warning("Precio Regalado")
+            st.success("Precio Regalado")
             st.write("Aproveche la oferta.")
+        if descuento < 25:
+            st.error("Cuestionable")
+            st.write("espera a una rebaja mas baja.")
+        elif 25 <= descuento < 50:
+            st.error("Razonable")
+            st.write("es una buena oferta.")
+        
     # Extra: Mostrar la fórmula usada (LaTeX)
     st.write("---")
     st.info("Fórmula matemática aplicada en el proceso:")
