@@ -30,4 +30,4 @@ if st.button("Calcular Precio Final"):
     # Extra: Mostrar la fórmula usada (LaTeX)
     st.write("---")
     st.info("Fórmula matemática aplicada en el proceso:")
-    st.latex(r''' IMC = \frac{peso}{altura^2} ''')
+    st.latex(r'''Precio Final = PrecioOriginal * (descuento / 100) ''')
