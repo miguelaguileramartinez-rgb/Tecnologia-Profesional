@@ -31,3 +31,4 @@ if st.button("Calcular Precio Final"):
     st.write("---")
     st.info("Fórmula matemática aplicada en el proceso:")
     st.latex(r'''Precio Final = PrecioOriginal * (descuento / 100) ''')
+    st.balloons()
