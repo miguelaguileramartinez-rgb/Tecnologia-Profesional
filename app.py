@@ -26,7 +26,12 @@ if st.button("Calcular Precio Final"):
     with col1:
         # Usamos metric para que el número se vea grande
         st.metric(label="Tu Precio Final es:", value=f"{precio_final:.2f}")
-   
+
+    with col2:
+        # Usamos condicionales (if/elif/else) para el diagnóstico
+        if descuento > 50:
+            st.warning("Precio Regalado")
+            st.write("Aproveche la oferta.")
     # Extra: Mostrar la fórmula usada (LaTeX)
     st.write("---")
     st.info("Fórmula matemática aplicada en el proceso:")
