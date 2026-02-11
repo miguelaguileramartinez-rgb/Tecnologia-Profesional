@@ -36,7 +36,7 @@ if st.button("Calcular Precio Final"):
             st.error("Cuestionable")
             st.write("espera a una rebaja mas baja.")
         elif 25 <= descuento < 50:
-            st.error("Razonable")
+            st.warning("Razonable")
             st.write("es una buena oferta.")
         
     # Extra: Mostrar la fórmula usada (LaTeX)
